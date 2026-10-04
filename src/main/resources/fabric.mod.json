@@ -1,0 +1,30 @@
+{
+    "schemaVersion": 1,
+    "id": "${mod_id}",
+    "version": "${mod_version}",
+    "name": "${mod_name}",
+    "description": "Displays team upgrades & traps purchased in bedwars on the HUD.",
+    "authors": [
+        "ztzt",
+        "ootruffle"
+    ],
+    "contact": {
+        "sources": "https://github.com/ztztmc/BedwarsUpgradesDisplay"
+    },
+    "license": "MIT",
+    "environment": "client",
+    "entrypoints": {
+        "init": [
+            "com.ootruffle.bedwarsupgradesdisplay.BedwarsUpgradesDisplayEntrypoint"
+        ]
+    },
+    "mixins": [
+        "mixins.${mod_id}.json"
+    ],
+    "depends": {
+        "fabricloader": ">=${loader_version}",
+        "minecraft": "1.8.9",
+        "osl": ">=${osl_version}",
+        "oneconfig": ">=${oneconfig_version}"
+    }
+}
